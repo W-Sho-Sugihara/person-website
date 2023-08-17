@@ -1,3 +1,7 @@
+Personal Website for W. Sho Sugihara, Me. Thanks for joining me. I used a HTML5 UP template and am extremely greatful for the work that went into the template and there willingness to share their work.
+
+
+
 Hyperspace by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
