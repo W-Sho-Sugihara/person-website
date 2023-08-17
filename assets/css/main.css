@@ -2311,6 +2311,8 @@ button:hover:active:after,
 @media screen and (max-width: 736px) {
   .features section {
     padding: 2.5em 1.5em 0.1em 5.5em;
+    flex-direction: column;
+
   }
 
   .features section .icon {
@@ -3101,14 +3103,24 @@ header h6 + p {
 
 /* Spotlights */
 
+.tinker-container {
+  height: 100vh;
+  padding-top: 3.5rem;
+}
+
 .spotlights .heading {
   display: flex;
   align-items: baseline;
-  /* padding-left: 6rem; */
 }
 
 .spotlights .heading h1 {
   font-size: 6rem;
+  margin-bottom: 0;
+}
+
+.tinker-logo {
+  width: 20%;
+  margin-top: 1rem;
 }
 
 .spotlights > section {
@@ -3125,42 +3137,39 @@ header h6 + p {
   justify-content: center;
 }
 
+
 body.is-ie .spotlights > section {
   min-height: 0;
 }
 
-.table-editor {
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-}
-
-.table-editor img {
+.table-editor-image {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   box-shadow: 0px 6px 8px 0 rgba(0, 0, 0, 0.2),
     0px 6px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  width: 50rem;
+  width: 100%;
+
 }
 
-.dashboard-gif {
-  padding: 4rem;
+.spotlight_headings {
+  display: flex;
+  /* align-items: baseline; */
+  justify-content: space-between;
 }
 
-.dashboard-gif img {
+.spotlight_headings img{
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.spotlight_image {
+  width: 50%;
   border-radius: 5px;
-  width: 40rem;
   box-shadow: 0px 6px 8px 0 rgba(0, 0, 0, 0.2),
     0px 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.cli-gif {
-  padding: 4rem;
-}
-.cli-gif img {
-  border-radius: 5px;
-  width: 40rem;
-  box-shadow: 0px 6px 8px 0 rgba(0, 0, 0, 0.2),
-    0px 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
 
 /* .spotlights > section > .image {
   background-position: center center;
@@ -3207,17 +3216,18 @@ body.is-ie .spotlights > section {
   -ms-justify-content: center;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: 40%;
   -ms-flex: 1;
+}
+
+.spotlights > section > .first_content {
+  width: 80%;
+  height: 100vh;
 }
 
 .spotlights > section > .content p {
 margin-bottom: 1rem;
 }
-/* .spotlights ul {
-  margin: 0;
-  pad: 0;
-} */
 
 .spotlights > section > .content > .inner {
   -moz-transform: translateX(0) translateY(0);
@@ -3231,6 +3241,7 @@ margin-bottom: 1rem;
   opacity: 1;
   color: aliceblue;
   font-size: 1.3rem !important;
+  width: 100%;
 }
 
 .spotlights > section:nth-child(2) {
@@ -3262,6 +3273,28 @@ body.is-preload .spotlights > section > .content > .inner {
 }
 
 @media screen and (max-width: 980px) {
+  .tinker-container {
+
+  }
+
+  .spotlight_headings {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .spotlight_headings img{
+    width: 2rem;
+    margin-left: 1rem;
+  }
+  
+  .spotlight_image {
+    width: 50%;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px 0 rgba(0, 0, 0, 0.2),
+      0px 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
   .spotlights .heading {
     padding-left: 4rem;
   }
@@ -3288,6 +3321,13 @@ body.is-preload .spotlights > section > .content > .inner {
   .spotlights > section {
     flex-wrap: wrap;
   }
+  
+  .spotlights .inner {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .spotlights > section > .image {
     width: 100%;
@@ -3297,7 +3337,7 @@ body.is-preload .spotlights > section > .content > .inner {
   .spotlights > section > .content {
     width: 100%;
   }
-
+  
   .spotlights > section.inactive > .content > .inner,
   body.is-preload .spotlights > section > .content > .inner {
     -moz-transform: translateY(1em);
@@ -3308,6 +3348,12 @@ body.is-preload .spotlights > section > .content > .inner {
 }
 
 @media screen and (max-width: 736px) {
+  .tinker-container {
+    padding-top: 0;
+  }
+  .first_content {
+    padding-top: 0;
+  }
   .table-editor img {
     width: 30rem;
   }
@@ -3318,7 +3364,7 @@ body.is-preload .spotlights > section > .content > .inner {
   }
 
   .spotlights > section > .content {
-    padding: 3em 2em 1em 2em;
+    padding: 1rem;
   }
 }
 
@@ -3761,7 +3807,7 @@ padding-left: 1px;
 }
 
 #sidebar .social img {
-  width: 1.7rem;
+  width: 1.3rem;
 
 }
 
