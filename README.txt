@@ -1,4 +1,4 @@
-Personal Website for W. Sho Sugihara, Me. Thanks for joining me. I used a HTML5 UP template and am extremely greatful for the work that went into the template and there willingness to share their work.
+Personal Website for W. Sho Sugihara, Me. Thanks for joining me. I used a HTML5 UP template and am extremely greatful for the work that went into the template and their willingness to share their work.
 
 
 
