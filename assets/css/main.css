@@ -3288,7 +3288,7 @@ body.is-preload .spotlights > section > .content > .inner {
   }
   
   .spotlight_image {
-    width: 50%;
+    width: 60%;
     margin-top: 3%;
     border-radius: 5px;
     box-shadow: 0px 6px 8px 0 rgba(0, 0, 0, 0.2),
@@ -3354,8 +3354,16 @@ body.is-preload .spotlights > section > .content > .inner {
   .first_content {
     padding-top: 0;
   }
-  .table-editor img {
-    width: 30rem;
+  /* .table-editor img {
+    width: 80%;
+  } */
+
+  .table-editor-image {
+    width: 75%;
+  }
+
+  .spotlight_image{
+    width: 80%;
   }
 
   .spotlights > section > .image {
@@ -3792,7 +3800,14 @@ body.is-ie #sidebar > .inner {
   right: 0;
   top: 0;
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
+}
+
+.social .icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55px;
 }
 
 .social a {
@@ -3803,7 +3818,24 @@ body.is-ie #sidebar > .inner {
   display: flex;
   align-content: center;
   justify-content: center;
-padding-left: 1px;
+
+  padding-left: 1px;
+}
+
+.social a:hover + span {
+  display: flex;
+
+}
+.social span {
+  display: none;
+  background-color: rgb(85, 85, 85);
+  border-radius: 3px;
+  color: aliceblue;
+  font-size: .8rem;
+  height: 1.5rem;
+  padding: .1rem .3rem;
+  align-items: center;
+
 }
 
 #sidebar .social img {
