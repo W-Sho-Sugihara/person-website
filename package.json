@@ -1,0 +1,17 @@
+{
+  "name": "person-website",
+  "version": "1.0.0",
+  "description": "Personal Website for W. Sho Sugihara, aka Me. Thanks for joining me. ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
